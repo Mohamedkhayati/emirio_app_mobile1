@@ -5,7 +5,7 @@ import 'package:http_parser/http_parser.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ApiClient {
-  static const String baseUrl = 'http://192.168.1.14:8080';
+  static const String baseUrl = 'http://localhost:8080';
 
   static Future<String?> _getToken() async {
     final prefs = await SharedPreferences.getInstance();
